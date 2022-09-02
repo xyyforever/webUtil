@@ -1,40 +1,6 @@
-#CSS实现不换行/自动换行/文本超出隐藏显示省略号
-在写页面的时候，我们经常会需要用到关于文本的换行，强制换行以及显示几行超过显示省略号等，今天我们就对这些问题来做个汇总吧
-##自动换行
-div{
-   word-wrap:break-word;
-   word-break:normal;
-}
-##强制不换行
-div{
-   white-space:nowrap;
-}
-##强制英文单词换行
-div{
-   word-break:break-all;
-}
-##单行文本不换行多余文本显示省略号
-div{
-   width:200px;
-   white-space:nowrap;
-   overflow:hidden;
-   text-overflow:ellipsis;
-}
-##多行文本超出隐藏多余文本显示省略号
-div{
-   display:-webkit-box;
-   overflow:hidden;
-   text-overflow:ellipsis;
-   -webkit-line-clamp:3;
-   -webkit-box-orient:vertical;
-}
-##table表格中单元格单行文本不换行
-table{
-   table-layout:fixed;
-}
-table tr td{
-   width:60%;
-   white-space:nowrap;
-   overflow:hidden;
-   text-overflow:ellipsis;
-}
+# 实用工具集
+
+记录的工具源自于工作，生活，开源软件，算法网站，以及他人书籍。
+
+* 业务工具
+    * [简单货币格式化](https://wsafight.github.io/business-util/#/business/currency)
